@@ -1,5 +1,5 @@
 from pytorch_transformers import BertModel
-from bert_tagger.models.crf import CRF
+from models.crf import CRF
 import torch.nn as nn
 import torch
 
