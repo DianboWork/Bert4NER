@@ -1,8 +1,8 @@
-from bert_tagger.utils.data import Data
-from bert_tagger.utils.batchify import batchify
-from bert_tagger.utils.config import get_args
-from bert_tagger.models.pretrain_base import Token_Classification
-from bert_tagger.utils.metric import get_ner_fmeasure
+from utils.data import Data
+from utils.batchify import batchify
+from utils.config import get_args
+from models.pretrain_base import Token_Classification
+from utils.metric import get_ner_fmeasure
 from pytorch_transformers import AdamW, WarmupLinearSchedule, WarmupConstantSchedule
 import os
 import numpy as np
