@@ -14,10 +14,10 @@ def add_argument_group(name):
 
 # Data
 data_arg = add_argument_group('Data')
-data_arg.add_argument('--dataset_name', type=str, default="twitter2017")
-data_arg.add_argument('--train_doc', type=str, default="../data/twitter2017/train.txt")
-data_arg.add_argument('--dev_doc', type=str, default="../data/twitter2017/valid.txt")
-data_arg.add_argument('--test_doc', type=str, default="../data/twitter2017/test.txt")
+data_arg.add_argument('--dataset_name', type=str)
+data_arg.add_argument('--train_doc', type=str)
+data_arg.add_argument('--dev_doc', type=str)
+data_arg.add_argument('--test_doc', type=str)
 data_arg.add_argument('--data_stored_directory', type=str, default="./generated_data/")
 data_arg.add_argument('--param_stored_directory', type=str, default="./generated_data/model_param/")
 
@@ -36,7 +36,7 @@ learn_arg.add_argument("--adam_epsilon", default=1e-8, type=float, help="Epsilon
 learn_arg.add_argument('--use_clip', type=str2bool, default=False)
 learn_arg.add_argument('--max_grad_norm', type=float, default=1.0)
 
-learn_arg.add_argument('--bert_file', type=str, default="../data/bert_base_cased/")
+learn_arg.add_argument('--bert_file', type=str)
 learn_arg.add_argument('--hidden_dropout_prob', type=float, default=0.1)
 learn_arg.add_argument('--alpha', type=float, default=1.0)
 learn_arg.add_argument('--gamma', type=float, default=2.0)
